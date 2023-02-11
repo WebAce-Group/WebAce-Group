@@ -6,7 +6,6 @@ define('SET_FROM', 'kontakt@webace-group.dev');
 define('PASSWORD_KONTAKT', 'egryaaaidzbkrtnv');
 
 require_once dirname(__FILE__) . "/phpMailer/ManualLoader.php";
-require_once dirname(__FILE__) . "/templates/passReset.php";
 
 use PHPMailer\PHPMailer\PHPMailer;
 
