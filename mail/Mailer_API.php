@@ -1,9 +1,4 @@
 <?php
-define('PORT_SMTP', 587);
-define('SERWER_SMTP', 'smtp-relay.gmail.com');
-define('LOGIN_KONTAKT', 'adrian.goral@webace-group.dev');
-define('SET_FROM', 'kontakt@webace-group.dev');
-define('PASSWORD_KONTAKT', 'egryaaaidzbkrtnv');
 
 require_once dirname(__FILE__) . "/phpMailer/ManualLoader.php";
 
