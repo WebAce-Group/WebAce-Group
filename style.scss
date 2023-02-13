@@ -285,7 +285,18 @@ body{
                       font-size: 18px;
                       cursor: pointer;
                     }
-                  }
+                }
+            }
+            &:nth-of-type(10) {
+                footer{
+                    background-color: black;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100vh;
+                }
             }
         }
         span.totop{
