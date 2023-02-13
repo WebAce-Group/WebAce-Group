@@ -33,6 +33,7 @@ body{
                         padding: 1rem 2rem;
                         li{
                             list-style: none;
+                            transition: all 0.3s ease-in-out;
                             a{
                                 text-decoration: none;
                                 text-transform: uppercase;
@@ -41,6 +42,9 @@ body{
                                 font-family: 'Lustria', serif;
                                 font-size: 2.3rem;
                                 font-weight: 400;
+                            }
+                            &:hover{
+                                transform: scale(1.05);
                             }
                         }
                     }
