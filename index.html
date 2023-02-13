@@ -67,5 +67,35 @@
         </section>
     </div>
 </body>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    let form = document.querySelector('form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let data = new FormData(form);
+        let xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                let response = JSON.parse(xhr.responseText);
+                Swal.fire({
+                    icon: response.icon,
+                    title: response.title,
+                    text: response.text,
+                    confirmButtonText: 'OK'
+                })
+            }
+        }
+        xhr.open('POST', '/mail/sendContactMail.php', true);
+        xhr.send(data);
+        Swal.fire({
+            title: 'Wysyłanie wiadomości...',
+            html: 'Proszę czekać',
+            allowOutsideClick: false,
+            didOpen: () => {
+                Swal.showLoading()
+            }
+        })
+    });
+</script>
 
 </html>
