@@ -121,22 +121,42 @@
             </div>
         </section>
         <section id="kontakt">
-            <h2>Wyślij nam wiadomość</h2>
-            <form action="submit-form.php" method="post">
-                <label for="name">Imie i nazwisko:</label>
-                <input type="text" id="name" name="name"><br><br>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email"><br><br>
-                
-                <label for="subject">Temat:</label>
-                <input type="text" id="subject" name="subject"><br><br>
-                
-                <label for="message">Wiadomość:</label>
-                <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-                
-                <input type="submit" value="Wyślij">
-              </form>
+            <div class="container">
+                <div class="row">
+                        <h1>Kontakt</h1>
+                </div>
+                <div class="row input-container">
+                    <form action="submit-form.php" method="post">
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <input type="text" id="name" name="name" required>
+                                <label>Imię</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input">
+                                <input type="email" id="email" name="email" required>
+                                <label>Email</label> 
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="styled-input" style="float:right;">
+                                <input type="text" id="subject" name="subject" required>
+                                <label>Temat</label> 
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="styled-input wide">
+                                <textarea id="message" name="message" required></textarea>
+                                <label>Wiadomość</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12">
+                            <div class="btn-lrg submit-btn">Wyślij</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="footer">
             <footer>
