@@ -63,37 +63,39 @@
                 </div>
         </section>
         <section id="exp">
-            <div class="mount">
+            <div class="left">
                 <img src="img/BlackLogoTransparent.svg" alt="WebAce Logo">
             </div>
-            <div class="exp-get">
+            <div class="right">
                 <h1>Nie masz doświadczenia?</h1>
                 <h2>Chcesz je zdobyć?</h2>
                 <a href="#you"><img class="arrow" alt="strzałka" src="img/arrow.svg"></a>
             </div>
         </section>
         <section id="you">
-            <div class="we">
+            <div class="left">
                 <div class="inner">
                     <h1>Jesteśmy tu dla Ciebie</h1>
                     <p>Jeśli dopiero wchodzisz w świat IT, nie masz żadnego komercyjnego doświadczenia lub chcesz zbudować swoje portfolio - to miejsce dla Ciebie.</p>
                     <a href="#o-nas">Dowiedz się więcej</a>
                 </div>
             </div>
-            <div class="forestBg"></div>
+            <div class="right"></div>
         </section>
         <section id="o-nas">
             <div class="left">
                 <h2>Działamy non-profit</h2>
-                <img src="/img/4str-tlo.svg'" alt="tło">
+                <img src="img/4str-tlo.svg" alt="tło">
             </div>
             <div class="right"></div>
         </section>
         <section id="b&w">
             <div class="left">
-                <h2>Czarno, na białym.</h2>
-                <p>My dajemy Ci doświadczenie i możliwości rozwoju. Ty dołączasz do zespołu, szkolisz swoje umiejętności i budujesz swoje portfolio. Razem pomagamy sobie nawzajem.</p>
-                <a href="#kontakt">Zgłoś się już dziś</a>
+                <div class="inner">
+                    <h2>Czarno, na białym.</h2>
+                    <p>My dajemy Ci doświadczenie i możliwości rozwoju. Ty dołączasz do zespołu, szkolisz swoje umiejętności i budujesz swoje portfolio. <br>Razem pomagamy sobie nawzajem.</p>
+                    <a href="#kontakt">Zgłoś się już dziś</a>
+                </div>
             </div>
             <div class="right">
                 <img src="img/BlackLogoTransparent.svg" alt="WebAce Logo">
@@ -103,56 +105,68 @@
             <h2>Nasze ostatnie projekty</h2>
         </section>
         <section id="zespol">
-            <h2>Zespół</h2>
-            <div>
-                <img src="" alt="">
-                <h3>Paulina Szulc</h3>
-                <p>Opis</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Adrian Goral</h3>
-                <p>Opis</p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <h3>Jakub Przybysz</h3>
-                <p>Opis</p>
+            <h2>Nasz zespół</h2>
+            <div class="team">
+                <div class="person">
+                    <img src="img/3.jpg" alt="Zdjęcie">
+                    <h3>Paulina Szulc</h3>
+                        <ul>
+                            <li>Marketing</li>
+                            <li>Social Media</li>
+                            <li>Grafika</li>
+                        </ul>
+                </div>
+                <div class="person">
+                    <img src="img/1.jpg" alt="Zdjęcie">
+                    <h3>Adrian Goral</h3>
+                        <ul>
+                            <li>Zarządzanie serwerem i domenami</li>
+                            <li>Backend developer</li>
+                            <li>Kursy i szkolenia</li>
+                        </ul>
+                </div>
+                <div class="person">
+                    <img src="img/2.jpg" alt="Zdjęcie">
+                    <h3>Jakub Przybysz</h3>
+                        <ul>
+                            <li>Automatyzacja i testy</li>
+                            <li>Frontend developer</li>
+                            <li>Mentoring</li>
+                        </ul>
+                </div>
             </div>
         </section>
         <section id="kontakt">
             <div class="container">
-                <div class="row">
-                        <h1>Kontakt</h1>
-                </div>
-                <div class="row input-container">
+                <h1>Kontakt</h1>
+                <div class="input-container">
                     <form action="submit-form.php" method="post">
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <input type="text" id="name" name="name" required>
-                                <label>Imię</label> 
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12">
+                        <div>
                             <div class="styled-input">
-                                <input type="email" id="email" name="email" required>
+                                <label>Imię</label> 
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="styled-input">
                                 <label>Email</label> 
+                                <input type="email" id="email" name="email" required>
                             </div>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <div class="styled-input" style="float:right;">
-                                <input type="text" id="subject" name="subject" required>
+                        <div>
+                            <div class="styled-input">
                                 <label>Temat</label> 
+                                <input type="text" id="subject" name="subject" required>
                             </div>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="styled-input wide">
-                                <textarea id="message" name="message" required></textarea>
+                        <div>
+                            <div class="styled-input">
                                 <label>Wiadomość</label>
+                                <textarea id="message" name="message" required></textarea>
                             </div>
                         </div>
-                        <div class="col-xs-12">
-                            <div class="btn-lrg submit-btn">Wyślij</div>
+                        <div>
+                            <button type="submit">Wyślij</button>
                         </div>
                     </form>
                 </div>
