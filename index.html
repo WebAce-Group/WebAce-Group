@@ -120,7 +120,7 @@
         </span>
     </div>
 </body>
-<!-- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script type="text/javascript">
     let form = document.querySelector('form');
     form.addEventListener('submit', function(e) {
@@ -136,19 +136,23 @@
                     text: response.text,
                     confirmButtonText: 'OK'
                 })
+                if (response.icon == 'success') {
+                    HTMLFormElement.prototype.reset.call(form);
+                }
             }
         }
-        xhr.open('POST', '/mail/sendContactMail.php', true);
+        xhr.open('POST', 'mail/sendContactMail.php', true);
         xhr.send(data);
         Swal.fire({
             title: 'Wysyłanie wiadomości...',
             html: 'Proszę czekać',
             allowOutsideClick: false,
+            timer: 2000,
             didOpen: () => {
                 Swal.showLoading()
             }
         })
     });
-</script> -->
+</script>
 
 </html>
