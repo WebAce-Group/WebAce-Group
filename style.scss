@@ -15,6 +15,22 @@ body{
         scroll-snap-type: y mandatory;
         overflow-y: scroll;
         overflow-x: hidden;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background-color: #000000;
+            border-radius: 10px;
+            border: 0px solid #ffffff;
+        }
 
         section {
             width: 100vw;
@@ -77,6 +93,15 @@ body{
                     }
                     img{
                         margin-right: 10rem;
+                    }
+                }
+                @media all and (max-width: 991px) {
+                    .hero{
+                        flex-direction: column;
+                        img{
+                            margin-right: 0;
+                            margin-bottom: 2rem;
+                        }
                     }
                 }
             }
@@ -246,10 +271,55 @@ body{
                 .left{
                     width: 50%;
                     height: 100%;
+                    .container{
+                        height: 100%;
+                        width: 100%;
+                        max-width: 70%;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        h2{
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 2.3rem;
+                            font-weight: 500;
+                            text-align: center;
+                            margin-bottom: 2rem;
+                        }
+                        img{
+                            width: 350px;
+                            height: 500px;
+                            border-radius: 20px;
+                        }
+                    }
                 }
                 .right{
                     width: 50%;
                     height: 100%;
+                    .container{
+                        height: 100%;
+                        width: 100%;
+                        max-width: 70%;
+                        margin: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        div{
+                            margin-bottom: 3rem;
+                            h3{
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1.5rem;
+                                font-weight: 500;
+                                margin-bottom: 1rem;
+                            }
+                            p{
+                                font-size: 1.2rem;
+                                line-height: 1.5rem;
+                            }
+                        }
+                    }
                 }
             }
             &:nth-of-type(6) {
