@@ -242,7 +242,15 @@ body{
                 }
             }
             &:nth-of-type(5) {
-                
+                display: flex;
+                .left{
+                    width: 50%;
+                    height: 100%;
+                }
+                .right{
+                    width: 50%;
+                    height: 100%;
+                }
             }
             &:nth-of-type(6) {
                 background: url('../img/home.svg') no-repeat center center/cover;
@@ -369,75 +377,77 @@ body{
             }
             &:nth-of-type(9) {
                 background-color: black;
-                h1 {
-                    margin-top: 10vh;
-                    font-weight: 600;
-                    font-size: 3.5rem;
-                    color: white;
-                    text-align: center;
-                }
-
-                .input-container{
-                    max-width: 1000px;
-                    margin: 0 auto;
+                .container{
                     display: flex;
                     flex-direction: column;
-                    align-items: center;
                     justify-content: center;
-                    margin-top: 5vh;
-                    form {
-                        width: 100%;
-                        padding: 0 10vw;
-                        label{
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 1.5rem;
-                            font-weight: 500;
-                            color: white;
-                            text-align: center;
-                        }
-                        input, textarea{
+                    align-items:center;
+                    h2 {
+                        font-weight: 600;
+                        font-size: 3.5rem;
+                        color: white;
+                        text-align: center;
+                    }
+                    .input-container{
+                        max-width: 1000px;
+                        margin: 0 auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 5vh;
+                        form {
                             width: 100%;
-                            height: 50px;
-                            border: none;
-                            border-radius: 5px;
-                            padding: 1rem;
-                            margin-bottom: 1rem;
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 1.2rem;
-                            font-weight: 400;
-                            color: white;
-                            background-color: #1a1a1a;
-                            transition: all 0.3s ease-in-out;
-                            &:focus{
-                                outline: none;
-                                background-color: #2a2a2a;
+                            padding: 0 10vw;
+                            label{
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1.5rem;
+                                font-weight: 500;
+                                color: white;
+                                text-align: center;
                             }
-                        }
-                        textarea{
-                            resize: vertical;
-                            height: 150px;
-                        }
-                        button{
-                            width: 100%;
-                            height: 50px;
-                            border: none;
-                            border-radius: 5px;
-                            padding: 0 1rem;
-                            margin-bottom: 1rem;
-                            font-family: 'Poppins', sans-serif;
-                            font-size: 1.2rem;
-                            font-weight: 400;
-                            color: white;
-                            background-color: #1a1a1a;
-                            transition: all 0.3s ease-in-out;
-                            &:hover{
-                                background-color: #2a2a2a;
+                            input, textarea{
+                                width: 100%;
+                                height: 50px;
+                                border: none;
+                                border-radius: 5px;
+                                padding: 1rem;
+                                margin-bottom: 1rem;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: white;
+                                background-color: #1a1a1a;
+                                transition: all 0.3s ease-in-out;
+                                &:focus{
+                                    outline: none;
+                                    background-color: #2a2a2a;
+                                }
+                            }
+                            textarea{
+                                resize: vertical;
+                                height: 150px;
+                            }
+                            button{
+                                width: 100%;
+                                height: 50px;
+                                border: none;
+                                border-radius: 5px;
+                                padding: 0 1rem;
+                                margin-bottom: 1rem;
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1.2rem;
+                                font-weight: 400;
+                                color: white;
+                                background-color: #1a1a1a;
+                                transition: all 0.3s ease-in-out;
+                                &:hover{
+                                    background-color: #2a2a2a;
+                                }
                             }
                         }
                     }
                 }
-                
-                
             }
             &:nth-of-type(10) {
                 footer{
