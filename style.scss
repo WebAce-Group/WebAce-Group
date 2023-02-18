@@ -528,6 +528,80 @@ body{
                     align-items: center;
                     justify-content: center;
                     height: 100vh;
+                    .top{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        h2{
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 2.1rem;
+                            font-weight: 500;
+                            color: white;
+                            width: 40%;
+                        }
+                        img{
+                            object-fit: cover;
+                        }
+                    }
+                    .center{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        h3{
+                            font-family: 'Poppins', sans-serif;
+                            font-size: 1.5rem;
+                            font-weight: 500;
+                            color: white;
+                            width: 40%;
+                        }
+                        .contact{
+                            a{
+                                font-family: 'Poppins', sans-serif;
+                                font-size: 1.5rem;
+                                line-height: 2rem;
+                                font-weight: 500;
+                                color: white;
+                                text-decoration: none;
+                                transition: all 0.3s ease-in-out;
+                            }
+                        }
+                        .social{
+                            ul{
+                                list-style: none;
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: center;
+                                li{
+                                    margin: 0 1rem;
+                                    a{
+                                        font-family: 'Poppins', sans-serif;
+                                        font-size: 1.5rem;
+                                        font-weight: 500;
+                                        color: white;
+                                        text-decoration: none;
+                                        transition: all 0.3s ease-in-out;
+                                        img{
+                                            width: 1.5rem;
+                                            height: 1.5rem;
+                                            margin-right: 10px;
+                                        }
+                                        span{
+                                            line-height: 2rem;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .bottom{
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
